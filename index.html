@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MyShift Backup — private Google Drive backup utility for MyShift.">
+  <title>MyShift Backup</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+    h1, h2 { line-height: 1.2; }
+    .muted { opacity: .72; }
+    nav { margin-top: 32px; display: flex; gap: 18px; flex-wrap: wrap; }
+    a { text-underline-offset: 3px; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>MyShift Backup</h1>
+
+    <p>
+      MyShift Backup is a private backup utility used by the owner of the
+      MyShift application to store database backup artifacts in the owner's
+      own Google Drive account.
+    </p>
+
+    <h2>Google Drive access</h2>
+    <p>
+      MyShift Backup requests only the Google Drive
+      <code>drive.file</code> OAuth scope. It uses this access to create,
+      upload, list, verify, download for restore verification, and delete
+      MyShift backup artifacts that are accessible to the application under
+      that scope. It does not request broad access to unrelated files in the
+      user's Google Drive.
+    </p>
+
+    <h2>Data handling</h2>
+    <p>
+      Backup files remain in the user's own Google Drive. OAuth credentials
+      and tokens are stored locally on the user's Mac by rclone and are not
+      sent to a separate MyShift application server. MyShift Backup does not
+      sell Google user data, use it for advertising, or use analytics or
+      tracking on this website.
+    </p>
+
+    <p class="muted">
+      This website is intentionally minimal and contains no advertising,
+      analytics, tracking scripts, or third-party embedded resources.
+    </p>
+
+    <nav aria-label="Legal">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </main>
+</body>
+</html>

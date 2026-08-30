@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for MyShift Backup.">
+  <title>Privacy Policy — MyShift Backup</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+    h1, h2 { line-height: 1.2; }
+    a { text-underline-offset: 3px; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p><strong>MyShift Backup</strong></p>
+    <p>Last updated: August 30, 2026</p>
+
+    <h2>Purpose</h2>
+    <p>
+      MyShift Backup is a private utility used to create and restore backup
+      copies of the MyShift application's database using the owner's own
+      Google Drive account as off-device storage.
+    </p>
+
+    <h2>Google user data accessed</h2>
+    <p>
+      MyShift Backup requests the Google Drive OAuth scope
+      <code>https://www.googleapis.com/auth/drive.file</code>.
+      This scope allows access to files the user creates or opens with the
+      application. MyShift Backup uses it only for backup artifacts that it
+      creates or otherwise accesses through this scope.
+    </p>
+
+    <h2>How Google user data is used</h2>
+    <p>
+      The application may create, upload, list, verify, download for restore
+      verification, and delete MyShift backup artifacts in Google Drive.
+      These operations are performed only to provide backup, integrity
+      verification, retention, and restore-verification functionality.
+    </p>
+
+    <h2>Storage</h2>
+    <p>
+      Backup artifacts are stored in the user's own Google Drive account.
+      OAuth credentials and refresh tokens used by rclone are stored locally
+      on the user's Mac. They are not stored in the MyShift source-code
+      repository and are not transmitted to a separate MyShift application
+      server.
+    </p>
+
+    <h2>Sharing and advertising</h2>
+    <p>
+      MyShift Backup does not sell Google user data. It does not share Google
+      user data with advertisers, does not use Google user data for
+      advertising, and does not use Google user data for profiling.
+    </p>
+
+    <h2>Retention and deletion</h2>
+    <p>
+      Backup artifacts remain in the user's Google Drive until removed by the
+      configured backup retention process or manually deleted by the user.
+      The user can also revoke the application's Google access at any time
+      from their Google Account permissions and can remove the local rclone
+      configuration to delete locally stored OAuth tokens.
+    </p>
+
+    <h2>Website data</h2>
+    <p>
+      This website does not use advertising, analytics, tracking scripts, or
+      application cookies. The hosting provider may process standard network
+      and security logs as described by its own service policies.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      For questions about MyShift Backup, use the support contact displayed
+      on the application's Google OAuth consent screen.
+    </p>
+
+    <p><a href="index.html">Back to MyShift Backup</a></p>
+  </main>
+</body>
+</html>
